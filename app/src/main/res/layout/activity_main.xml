@@ -8,25 +8,61 @@
     android:padding="20dp">
 
     <EditText
-        android:id="@+id/input_cost_of_service"
-        android:layout_width="250dp"
+        android:id="@+id/input_valor_da_conta"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:hint="Valor da Conta"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_service_question"
+        android:id="@+id/text_pergunta_serviço"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Como foi o serviço?"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_cost_of_service" />
+        app:layout_constraintTop_toBottomOf="@+id/input_valor_da_conta" />
+
+    <RadioGroup
+        android:id="@+id/group_opçoes_gorjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp"
+        android:checkedButton="@id/radio_vinte_porcento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_pergunta_serviço">
+
+        <RadioButton
+            android:id="@+id/radio_vinte_porcento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excelente (20%)"
+            android:textSize="16sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radio_quinze_porcento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bom (15%)"
+            android:textSize="16sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radio_dez_porcento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meh (10%)"
+            android:textSize="16sp"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
