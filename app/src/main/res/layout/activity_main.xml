@@ -12,7 +12,7 @@
         android:layout_width="250dp"
         android:layout_height="80dp"
         android:layout_marginTop="60dp"
-        android:hint="Valor da Conta"
+        android:hint="@string/valor_da_conta"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="30sp"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Como foi o serviço?"
+        android:text="@string/como_foi_o_servico"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_valor_da_conta"/>
@@ -44,25 +44,28 @@
             android:id="@+id/radio_vinte_porcento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Excelente (20%)"
+            android:text="@string/excelente_servico"
             android:textSize="16sp"
-            android:onClick="onRadioButtonClicked"/>
+            android:onClick="onRadioButtonClicked"
+            android:buttonTint="#02d8bf"/>
 
         <RadioButton
             android:id="@+id/radio_quinze_porcento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bom (15%)"
+            android:text="@string/bom_servico"
             android:textSize="16sp"
-            android:onClick="onRadioButtonClicked"/>
+            android:onClick="onRadioButtonClicked"
+            android:buttonTint="#02d8bf"/>
 
         <RadioButton
             android:id="@+id/radio_dez_porcento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Meh (10%)"
+            android:text="@string/meh_servico"
             android:textSize="16sp"
-            android:onClick="onRadioButtonClicked"/>
+            android:onClick="onRadioButtonClicked"
+            android:buttonTint="#02d8bf"/>
 
     </RadioGroup>
 
@@ -71,20 +74,23 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:text="Arredondar para cima?"
+        android:text="@string/arredondar_para_cima"
         android:textSize="16sp"
         android:checked="true"
+        android:thumbTint="#02d8bf"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/button_calcular"/>
 
-    <Button
+       <Button
         android:id="@+id/button_calcular"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginBottom="80dp"
-        android:text="Calcular"
+        android:text="@string/calcular"
         android:textSize="20sp"
+        android:textColor="#f2f2f2"
+        android:backgroundTint="#2f3653"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
@@ -92,7 +98,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor da gorjeta"
+        android:text="@string/valor_da_gorjeta"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_calcular"/>
