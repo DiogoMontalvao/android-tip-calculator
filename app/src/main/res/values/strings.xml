@@ -7,5 +7,5 @@
     <string name="meh_servico">Meh (10%)</string>
     <string name="arredondar_para_cima">Arredondar para cima?</string>
     <string name="calcular">Calcular</string>
-    <string name="valor_da_gorjeta">Valor da gorjeta</string>
+    <string name="valor_da_gorjeta">Valor da gorjeta: %s</string>
 </resources>

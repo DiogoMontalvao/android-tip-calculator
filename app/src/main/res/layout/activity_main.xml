@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/text_pergunta_serviço"
+        android:id="@+id/text_pergunta_servico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -31,14 +31,14 @@
         app:layout_constraintTop_toBottomOf="@+id/input_valor_da_conta"/>
 
     <RadioGroup
-        android:id="@+id/radio_group_opçoes_gorjeta"
+        android:id="@+id/group_opcoes_gorjeta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checkedButton="@id/radio_vinte_porcento"
         android:orientation="vertical"
         android:layout_marginTop="14dp"
-        android:checkedButton="@id/radio_vinte_porcento"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_pergunta_serviço">
+        app:layout_constraintTop_toBottomOf="@id/text_pergunta_servico">
 
         <RadioButton
             android:id="@+id/radio_vinte_porcento"
@@ -46,7 +46,6 @@
             android:layout_height="wrap_content"
             android:text="@string/excelente_servico"
             android:textSize="16sp"
-            android:onClick="onRadioButtonClicked"
             android:buttonTint="#02d8bf"/>
 
         <RadioButton
@@ -55,7 +54,6 @@
             android:layout_height="wrap_content"
             android:text="@string/bom_servico"
             android:textSize="16sp"
-            android:onClick="onRadioButtonClicked"
             android:buttonTint="#02d8bf"/>
 
         <RadioButton
@@ -64,7 +62,6 @@
             android:layout_height="wrap_content"
             android:text="@string/meh_servico"
             android:textSize="16sp"
-            android:onClick="onRadioButtonClicked"
             android:buttonTint="#02d8bf"/>
 
     </RadioGroup>
@@ -75,12 +72,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:text="@string/arredondar_para_cima"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:checked="true"
         android:thumbTint="#02d8bf"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button_calcular"/>
+        app:layout_constraintBottom_toTopOf="@id/button_calcular" />
 
        <Button
         android:id="@+id/button_calcular"
@@ -96,12 +93,12 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
+        android:id="@+id/text_valor_gorjeta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_da_gorjeta"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_calcular"/>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_calcular"
+        tools:text="Valor da gorjeta: R$ 10"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
