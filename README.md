@@ -3,9 +3,10 @@ Desenvolvido a partir do curso: [Android Basics in Kotlin (Unit 2: Layouts)](htt
 ##
 App que calcula a gorjeta.
 ##
-![1 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/5c708871-6d30-4c25-808d-887b0c09e947)
-![2 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/66f87871-dede-4911-93e8-f31f52131777)
-![3 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/abfc1cc3-3f22-4aea-8c4f-71a29b18b6f8)
-![4 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/bc04f215-0f8d-4848-a7ba-15e5f3f4f9ec)
-![5 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/bdd44f18-8d4a-46e5-9df0-096a1f50f891)
+![1 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/14c2f598-f026-475c-861a-7a33955e1d4e)
+![2 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/f6563de6-74da-405d-a242-b378eab072bd)
+![3 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/12c5a277-1b93-45cd-a405-639ad5eeaf76)
+![4 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/368c708b-5f33-45cc-8c5b-746407dc8a3a)
+![5 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/8ac1c7d3-5fe7-4b1f-8962-d80d3120d7df)
+
 
