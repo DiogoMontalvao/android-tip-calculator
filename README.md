@@ -5,6 +5,7 @@ Calcula a gorjeta.
 
 **O projeto possui:**
 
+  - View binding
   - EditText
   - RadioGroup / RadioButton
   - Switch
