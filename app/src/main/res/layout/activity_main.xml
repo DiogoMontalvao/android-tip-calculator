@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/button_calcular" />
 
-       <Button
+    <Button
         android:id="@+id/button_calcular"
         android:layout_width="0dp"
         android:layout_height="80dp"
