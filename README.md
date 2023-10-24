@@ -5,6 +5,7 @@ Calcula a gorjeta.
 
 **O projeto possui:**
 
+  - Temas light/dark
   - View binding
   - EditText
   - RadioGroup / RadioButton
@@ -12,10 +13,20 @@ Calcula a gorjeta.
   - Button
   - String resources
 ##
-![1 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/14c2f598-f026-475c-861a-7a33955e1d4e)
-![2 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/f6563de6-74da-405d-a242-b378eab072bd)
-![3 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/12c5a277-1b93-45cd-a405-639ad5eeaf76)
-![4 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/368c708b-5f33-45cc-8c5b-746407dc8a3a)
-![5 (Personalizado)](https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/8ac1c7d3-5fe7-4b1f-8962-d80d3120d7df)
+<div align="center">
+  <img src="https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/e76d94c3-c741-4b4f-99f6-9905f84a15b7" width="220">
+  <img src="https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/8b797419-40da-40dc-827b-b2f9e215404c" width="220">
+  <img src="https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/7c36c694-5777-417d-8850-d4f046234265" width="220">
+</div>
+
+##
+
+<div align="center">
+  <img src="https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/21cf5bd6-ed18-4fe0-843a-c7255870ffa8" width="220">
+  <img src="https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/90303b44-8607-4f80-af18-4a69cb426bb9" width="220">
+  <img src="https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/89e7b708-93ce-4364-b6cc-5431c2a0595b" width="220">
+</div>
+
+
 
 
