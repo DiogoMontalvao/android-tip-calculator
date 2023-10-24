@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Theme.Tip_CalculatorAndroid" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/azul_20</item>
+        <item name="colorPrimaryVariant">@color/azul_10</item>
+        <item name="colorOnPrimary">@color/azul_95</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cinza_20</item>
+        <item name="colorSecondaryVariant">@color/cinza_10</item>
+        <item name="colorOnSecondary">@color/azul_95</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
 
-    <style name="Theme.Tip_CalculatorAndroid" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>

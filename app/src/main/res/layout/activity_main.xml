@@ -44,25 +44,25 @@
             android:id="@+id/radio_vinte_porcento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/azul_40"
             android:text="@string/excelente_servico"
-            android:textSize="16sp"
-            android:buttonTint="#02d8bf"/>
+            android:textSize="16sp"/>
 
         <RadioButton
             android:id="@+id/radio_quinze_porcento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/azul_40"
             android:text="@string/bom_servico"
-            android:textSize="16sp"
-            android:buttonTint="#02d8bf"/>
+            android:textSize="16sp"/>
 
         <RadioButton
             android:id="@+id/radio_dez_porcento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/azul_40"
             android:text="@string/meh_servico"
-            android:textSize="16sp"
-            android:buttonTint="#02d8bf"/>
+            android:textSize="16sp"/>
 
     </RadioGroup>
 
@@ -74,7 +74,7 @@
         android:text="@string/arredondar_para_cima"
         android:textSize="20sp"
         android:checked="true"
-        android:thumbTint="#02d8bf"
+        android:thumbTint="@color/azul_40"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/button_calcular" />
@@ -84,13 +84,13 @@
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/cinza_20"
         android:text="@string/calcular"
+        android:textColor="@color/azul_95"
         android:textSize="20sp"
-        android:textColor="#f2f2f2"
-        android:backgroundTint="#2f3653"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/text_valor_gorjeta"
