@@ -63,17 +63,14 @@
 
     </RadioGroup>
 
-    <com.google.android.material.materialswitch.MaterialSwitch
-        android:id="@+id/switch_arredondar_para_cima"
-        android:layout_width="0dp"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_valor_gorjeta"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/arredondar_para_cima"
         android:textSize="20sp"
-        android:checked="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_calcular"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
+        app:layout_constraintBottom_toTopOf="@id/button_calcular"
+        tools:text="Valor da gorjeta: R$ 10"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_calcular"
@@ -86,13 +83,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_valor_gorjeta"
-        android:layout_width="wrap_content"
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switch_arredondar_para_cima"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:text="@string/arredondar_para_cima"
         android:textSize="20sp"
+        android:checked="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button_calcular"
-        tools:text="Valor da gorjeta: R$ 10"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_calcular"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
