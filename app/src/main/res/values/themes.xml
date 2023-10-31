@@ -2,15 +2,16 @@
 <resources>
     <style name="Theme.Tip_CalculatorAndroid" parent="Theme.Material3.DayNight">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/azul_20</item>
-        <item name="colorPrimaryVariant">@color/azul_10</item>
-        <item name="colorOnPrimary">@color/azul_95</item>
+        <item name="colorPrimary">@color/azul_10</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/azul_95</item>
+        <item name="colorOnPrimaryContainer">@color/azul_10</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/cinza_20</item>
-        <item name="colorSecondaryVariant">@color/cinza_10</item>
-        <item name="colorOnSecondary">@color/azul_95</item>
+        <item name="colorSecondary">@color/cinza_40</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/azul_95</item>
+        <item name="colorOnSecondaryContainer">@color/cinza_10</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/cor_inicial</item>
     </style>
-
 </resources>

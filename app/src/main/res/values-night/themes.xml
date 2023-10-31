@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Tip_CalculatorAndroid" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/azul_80</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/azul_10</item>
+        <item name="colorOnPrimaryContainer">@color/azul_80</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cinza_80</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">@color/cinza_10</item>
+        <item name="colorOnSecondaryContainer">@color/azul_95</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/cor_inicial</item>
+    </style>
+</resources>

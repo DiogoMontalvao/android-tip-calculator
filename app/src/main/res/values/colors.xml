@@ -8,10 +8,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="cor_inicial">#1f2b37</color>
     <color name="azul_10">#001d33</color>
     <color name="azul_20">#003353</color>
     <color name="azul_40">#00639b</color>
+    <color name="azul_70">#65b1f3</color>
+    <color name="azul_80">#97cbff</color>
+    <color name="azul_90">#cee5ff</color>
     <color name="azul_95">#e8f2ff</color>
-    <color name="cinza_20">#233240</color>
     <color name="cinza_10">#0e1d2a</color>
+    <color name="cinza_20">#233240</color>
+    <color name="cinza_40">#51606f</color>
+    <color name="cinza_80">#b9c8da</color>
+    <color name="cinza_90">#d5e4f7</color>
 </resources>
