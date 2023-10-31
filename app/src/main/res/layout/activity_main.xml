@@ -72,14 +72,14 @@
         android:checked="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button_calcular"
+        app:layout_constraintTop_toBottomOf="@id/button_calcular"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_calcular"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="120dp"
         android:text="@string/calcular"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_calcular"
+        app:layout_constraintBottom_toTopOf="@id/button_calcular"
         tools:text="Valor da gorjeta: R$ 10"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
