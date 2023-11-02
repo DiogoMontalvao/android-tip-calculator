@@ -6,7 +6,7 @@ Calcula a gorjeta.
 
 **O projeto possui:**
 
-  - Temas light/dark
+  - Temas claro/escuro
   - Material3
   - View binding
   - EditText
