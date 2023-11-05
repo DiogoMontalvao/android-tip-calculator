@@ -19,6 +19,7 @@ Calcula a gorjeta.
 <div align="center">
   <video src="https://github.com/DiogoMontalvao/Tip_Calculator-Android/assets/109600744/126b4e9d-7d30-4059-b427-16766ceabbc4" width="220">
 </div>
+<br><br>
 
 
 
