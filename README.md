@@ -11,7 +11,7 @@ Calcula a gorjeta.
   - View Binding
   - ScrollView
   - EditText
-  - RadioGroup / RadioButton
+  - RadioButton
   - Switch
   - Button
   - String resources
