@@ -6,6 +6,7 @@ Calcula a gorjeta.
 
 **O projeto possui:**
 
+  - Testes Instrumentados com a API Espresso
   - Temas claro/escuro
   - Material Components
   - View Binding
