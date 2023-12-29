@@ -19,7 +19,8 @@ class MainActivity : ComponentActivity() {
 
         binding.layoutInputValorDaConta.setEndIconOnClickListener { limparTexto() }
 
-        binding.inputValorDaConta.hint = getString(R.string.valor_da_conta, NumberFormat.getCurrencyInstance().format(0.00))
+        binding.inputValorDaConta.hint =
+            getString(R.string.valor_da_conta, NumberFormat.getCurrencyInstance().format(0.00))
 
         binding.buttonCalcular.setOnClickListener { calcularGorjeta() }
 
@@ -39,7 +40,7 @@ class MainActivity : ComponentActivity() {
             return
         }
 
-        val porcentagemGorjeta = when (binding.groupOpcoesGorjeta.checkedRadioButtonId){
+        val porcentagemGorjeta = when (binding.groupOpcoesGorjeta.checkedRadioButtonId) {
             R.id.radio_vinte_porcento -> 0.20
             R.id.radio_quinze_porcento -> 0.15
             else -> 0.10
@@ -47,9 +48,7 @@ class MainActivity : ComponentActivity() {
 
         var gorjeta = valor * porcentagemGorjeta
 
-        if (binding.switchArredondarParaCima.isChecked) {
-            gorjeta = ceil(gorjeta)
-        }
+        if (binding.switchArredondarParaCima.isChecked) gorjeta = ceil(gorjeta)
 
         formatarGorjeta(gorjeta)
     }
@@ -60,7 +59,8 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun recolherTeclado(view: View) {
-        val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        val inputMethodManager =
+            getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
     }
 }
