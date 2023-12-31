@@ -1,5 +1,5 @@
 # Tip_Calculator-Android
-Desenvolvido a partir do curso: [Android Basics in Kotlin (Unit 2: Layouts)](https://developer.android.com/courses/android-basics-kotlin/unit-2), disponibilizado pelo Android Developers - Google.<br><br>
+Desenvolvido a partir do codelab: [Android Basics in Kotlin (Unit 2: Layouts)](https://developer.android.com/courses/android-basics-kotlin/unit-2), disponibilizado pelo Android Developers - Google.<br><br>
 Esse projeto possui diversas alterações em relação ao projeto original.
 ##
 Calcula a gorjeta.
