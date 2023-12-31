@@ -4,7 +4,7 @@ Esse projeto possui diversas alterações em relação ao projeto original.
 ##
 Calcula a gorjeta.
 
-**O projeto possui:**
+**Foco no aprendizado das ferramentas:**
 
   - Testes Instrumentados com a API Espresso
   - Temas claro/escuro
