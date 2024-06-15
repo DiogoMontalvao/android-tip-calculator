@@ -17,10 +17,10 @@ class MainActivity : ComponentActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.layoutInputValorDaConta.setEndIconOnClickListener { limparTexto() }
-
         binding.inputValorDaConta.hint =
             getString(R.string.valor_da_conta, NumberFormat.getCurrencyInstance().format(0.00))
+
+        binding.layoutInputValorDaConta.setEndIconOnClickListener { limparTexto() }
 
         binding.buttonCalcular.setOnClickListener { calcularGorjeta() }
 
@@ -32,8 +32,8 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun calcularGorjeta() {
-        val stringCampoDeTexto = binding.inputValorDaConta.text.toString()
-        val valor = stringCampoDeTexto.toDoubleOrNull()
+        val stringCampoDeTexto: String? = binding.inputValorDaConta.text?.toString()
+        val valor: Double? = stringCampoDeTexto?.toDoubleOrNull()
 
         if (valor == null) {
             formatarGorjeta(0.0)
