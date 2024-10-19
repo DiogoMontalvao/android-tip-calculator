@@ -15,11 +15,12 @@
         android:focusable="true">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/valor_conta_input_layout"
             style="?attr/textInputFilledStyle"
-            android:id="@+id/layout_input_valor_da_conta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
+            android:orientation="horizontal"
             app:boxBackgroundColor="?attr/colorSurface"
             app:endIconDrawable="@drawable/round_cancel_24"
             app:endIconMode="custom"
@@ -28,8 +29,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:startIconDrawable="@drawable/round_paid_24">
 
-             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_valor_da_conta"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/valor_conta_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="numberDecimal"
@@ -44,7 +45,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/text_pergunta_servico"
+            android:id="@+id/pergunta_servico_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -52,42 +53,42 @@
             android:textColor="?attr/colorOnBackground"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layout_input_valor_da_conta" />
+            app:layout_constraintTop_toBottomOf="@id/valor_conta_input_layout" />
 
         <RadioGroup
-            android:id="@+id/group_opcoes_gorjeta"
+            android:id="@+id/opcoes_gorjeta_radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:checkedButton="@id/radio_vinte_porcento"
+            android:checkedButton="@id/vinte_porcento_radio"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_pergunta_servico">
+            app:layout_constraintTop_toBottomOf="@id/pergunta_servico_text">
 
             <com.google.android.material.radiobutton.MaterialRadioButton
-                android:id="@+id/radio_vinte_porcento"
+                android:id="@+id/vinte_porcento_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="@string/excelente_servico"
+                android:text="@string/excelente"
                 android:textSize="16sp" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
-                android:id="@+id/radio_quinze_porcento"
+                android:id="@+id/quinze_porcento_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="@string/bom_servico"
+                android:text="@string/bom"
                 android:textSize="16sp" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
-                android:id="@+id/radio_dez_porcento"
+                android:id="@+id/dez_porcento_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="@string/marromeno_servico"
+                android:text="@string/marromeno"
                 android:textSize="16sp" />
         </RadioGroup>
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/text_valor_gorjeta"
+            android:id="@+id/valor_gorjeta_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="260dp"
@@ -98,11 +99,11 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/group_opcoes_gorjeta"
+            app:layout_constraintTop_toBottomOf="@+id/opcoes_gorjeta_radio_group"
             tools:text="Valor da gorjeta: R$ 10" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_calcular"
+            android:id="@+id/calcular_button"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:text="@string/calcular"
@@ -110,10 +111,10 @@
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_valor_gorjeta" />
+            app:layout_constraintTop_toBottomOf="@id/valor_gorjeta_text" />
 
         <com.google.android.material.materialswitch.MaterialSwitch
-            android:id="@+id/switch_arredondar_para_cima"
+            android:id="@+id/arredondar_cima_switch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -124,7 +125,7 @@
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_calcular"
+            app:layout_constraintTop_toBottomOf="@id/calcular_button"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

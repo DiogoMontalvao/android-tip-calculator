@@ -2,9 +2,9 @@
     <string name="app_name">Tip Calculator</string>
     <string name="valor_da_conta">%s</string>
     <string name="como_foi_o_servico">Como foi o serviço?</string>
-    <string name="excelente_servico">Excelente (20%)</string>
-    <string name="bom_servico">Bom (15%)</string>
-    <string name="marromeno_servico">Marromeno (10%)</string>
+    <string name="excelente">Excelente (20%)</string>
+    <string name="bom">Bom (15%)</string>
+    <string name="marromeno">Marromeno (10%)</string>
     <string name="arredondar_para_cima">Arredondar para cima?</string>
     <string name="calcular">Calcular</string>
     <string name="valor_da_gorjeta">Valor da gorjeta: %s</string>

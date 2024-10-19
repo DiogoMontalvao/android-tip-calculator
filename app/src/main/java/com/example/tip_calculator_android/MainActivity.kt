@@ -2,65 +2,82 @@ package com.example.tip_calculator_android
 
 import android.content.Context
 import android.os.Bundle
-import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.activity.ComponentActivity
-import kotlin.math.*
 import com.example.tip_calculator_android.databinding.ActivityMainBinding
 import java.text.NumberFormat
+import kotlin.math.ceil
 
 class MainActivity : ComponentActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.inputValorDaConta.hint =
-            getString(R.string.valor_da_conta, NumberFormat.getCurrencyInstance().format(0.00))
+        criaHint()
 
-        binding.layoutInputValorDaConta.setEndIconOnClickListener { limparTexto() }
+        limpaTexto()
 
-        binding.buttonCalcular.setOnClickListener { calcularGorjeta() }
+        calculaGorjeta()
 
-        binding.constraint.setOnClickListener { recolherTeclado(binding.constraint) }
+        recolherTeclado()
     }
 
-    private fun limparTexto() {
-        binding.inputValorDaConta.text?.clear()
+    private fun criaHint() {
+        binding.valorContaInput.hint =
+            getString(
+                R.string.valor_da_conta, NumberFormat.getCurrencyInstance().format(0.00)
+            )
     }
 
-    private fun calcularGorjeta() {
-        val stringCampoDeTexto: String? = binding.inputValorDaConta.text?.toString()
-        val valor: Double? = stringCampoDeTexto?.toDoubleOrNull()
-
-        if (valor == null) {
-            formatarGorjeta(0.0)
-            return
+    private fun limpaTexto() {
+        binding.valorContaInputLayout.setEndIconOnClickListener {
+            binding.valorContaInput.text?.clear()
         }
+    }
 
-        val porcentagemGorjeta = when (binding.groupOpcoesGorjeta.checkedRadioButtonId) {
-            R.id.radio_vinte_porcento -> 0.20
-            R.id.radio_quinze_porcento -> 0.15
+    private fun calculaGorjeta() {
+        binding.calcularButton.setOnClickListener {
+            val inputValorConta: Double? =
+                binding.valorContaInput.text?.toString()?.toDoubleOrNull()
+
+            if (inputValorConta == null) {
+                formataValorGorjeta(0.0)
+                return@setOnClickListener
+            }
+
+            val porcentagemGorjeta = getPorcentagem()
+
+            var gorjeta = inputValorConta * porcentagemGorjeta
+
+            if (binding.arredondarCimaSwitch.isChecked) gorjeta = ceil(gorjeta)
+
+            formataValorGorjeta(gorjeta)
+        }
+    }
+
+    private fun formataValorGorjeta(valor: Double) {
+        val valorFormatado = NumberFormat.getCurrencyInstance().format(valor)
+
+        binding.valorGorjetaText.text = getString(R.string.valor_da_gorjeta, valorFormatado)
+    }
+
+    private fun getPorcentagem() =
+        when (binding.opcoesGorjetaRadioGroup.checkedRadioButtonId) {
+            binding.vintePorcentoRadio.id -> 0.20
+            binding.quinzePorcentoRadio.id -> 0.15
             else -> 0.10
         }
 
-        var gorjeta = valor * porcentagemGorjeta
+    private fun recolherTeclado() {
+        binding.constraint.setOnClickListener {
+            val inputMethodManager =
+                getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
 
-        if (binding.switchArredondarParaCima.isChecked) gorjeta = ceil(gorjeta)
-
-        formatarGorjeta(gorjeta)
-    }
-
-    private fun formatarGorjeta(value: Double) {
-        val gorjetaFormatada = NumberFormat.getCurrencyInstance().format(value)
-        binding.textValorGorjeta.text = getString(R.string.valor_da_gorjeta, gorjetaFormatada)
-    }
-
-    private fun recolherTeclado(view: View) {
-        val inputMethodManager =
-            getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+            inputMethodManager.hideSoftInputFromWindow(binding.constraint.windowToken, 0)
+        }
     }
 }
