@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RadioStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/radio_height</item>
+        <item name="android:textSize">@dimen/radio_text_size</item>
+    </style>
+
+</resources>

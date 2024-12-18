@@ -19,65 +19,65 @@ class CalculatorTests {
 
     @Test
     fun calcular_gorjeta_20_porcento() {
-        onView(withId(R.id.valor_conta_input))
+        onView(withId(R.id.bill_value_edit))
             .perform(typeText("100.00"))
             .perform(ViewActions.closeSoftKeyboard())
 
-        onView(withId(R.id.vinte_porcento_radio))
+        onView(withId(R.id.twenty_percentage_radio))
             .perform(click())
 
-        onView(withId(R.id.calcular_button))
+        onView(withId(R.id.calculate_button))
             .perform(click())
 
-        onView(withId(R.id.valor_gorjeta_text))
+        onView(withId(R.id.tip_value_text))
             .check(matches(withText(containsString("20"))))
     }
 
     @Test
     fun calcular_gorjeta_15_porcento() {
-        onView(withId(R.id.valor_conta_input))
+        onView(withId(R.id.bill_value_edit))
             .perform(typeText("100.00"))
             .perform(ViewActions.closeSoftKeyboard())
 
-        onView(withId(R.id.quinze_porcento_radio))
+        onView(withId(R.id.fifteen_percentage_radio))
             .perform(click())
 
-        onView(withId(R.id.calcular_button))
+        onView(withId(R.id.calculate_button))
             .perform(click())
 
-        onView(withId(R.id.valor_gorjeta_text))
+        onView(withId(R.id.tip_value_text))
             .check(matches(withText(containsString("15"))))
     }
 
     @Test
     fun calcular_gorjeta_10_porcento() {
-        onView(withId(R.id.valor_conta_input))
+        onView(withId(R.id.bill_value_edit))
             .perform(typeText("100.00"))
             .perform(ViewActions.closeSoftKeyboard())
 
-        onView(withId(R.id.dez_porcento_radio))
+        onView(withId(R.id.ten_percentage_radio))
             .perform(click())
 
-        onView(withId(R.id.calcular_button))
+        onView(withId(R.id.calculate_button))
             .perform(click())
 
-        onView(withId(R.id.valor_gorjeta_text))
+        onView(withId(R.id.tip_value_text))
             .check(matches(withText(containsString("10"))))
     }
 
     @Test
     fun calcular_gorjeta_nao_arredondada() {
-        onView(withId(R.id.valor_conta_input))
+        onView(withId(R.id.bill_value_edit))
             .perform(typeText("103.00"))
             .perform(ViewActions.closeSoftKeyboard())
 
-        onView(withId(R.id.arredondar_cima_switch))
+        onView(withId(R.id.round_up_switch))
             .perform(click())
 
-        onView(withId(R.id.calcular_button))
+        onView(withId(R.id.calculate_button))
             .perform(click())
 
-        onView(withId(R.id.valor_gorjeta_text))
+        onView(withId(R.id.tip_value_text))
             .check(matches(withText(containsString("20.60"))))
     }
 }
